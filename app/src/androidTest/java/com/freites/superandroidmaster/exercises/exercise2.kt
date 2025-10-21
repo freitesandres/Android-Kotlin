@@ -29,7 +29,7 @@ fun main() {
 
 fun ticketPrice(age: Int, isMonday: Boolean): Int {
  when (age){
-     in 0..12 -> "$15"
+     in 0..14 -> "$15"
      in 61..100 -> "$20"
 
 
