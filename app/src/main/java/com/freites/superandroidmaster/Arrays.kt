@@ -26,5 +26,8 @@ for (position in weekDays.indices){
     for ((position, value) in weekDays.withIndex()){
         println("la posicion $position, contiene $value")
     }
+    for (weekDay in weekDays ){
+        println("Now is $weekDay")
+    }
     }
 
