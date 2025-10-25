@@ -13,6 +13,6 @@ fun inmutableList (){
 
     //val example = readOnly.filter { it.contains("a") }
     //println(example)
-
+// prueba actualizacion
     readOnly.forEach {weakDay-> println(weakDay) }
 }
