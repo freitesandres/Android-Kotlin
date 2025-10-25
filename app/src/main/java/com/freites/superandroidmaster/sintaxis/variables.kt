@@ -1,4 +1,4 @@
-package com.freites.superandroidmaster
+package com.freites.superandroidmaster.sintaxis
 
 fun main(){
     /**
