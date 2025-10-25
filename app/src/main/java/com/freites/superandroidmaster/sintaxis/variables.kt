@@ -1,6 +1,6 @@
 package com.freites.superandroidmaster.sintaxis
 
-fun main(){
+fun main() {
     /**
      * variables
      */
@@ -10,17 +10,20 @@ fun main(){
     var age2: Long = 20
 //Float
     val floatExample: Float = 20.5f
-    age=29
+    age = 29
     println(
-        age)
+        age
+    )
 
-    fun ShowMyName () {
+    fun ShowMyName() {
         println("Mellamooandres")
     }
-    fun ShowMyAge () {
+
+    fun ShowMyAge() {
         println("25")
     }
-    fun ShowMySpeciality () {
+
+    fun ShowMySpeciality() {
         println("Influencer")
     }
     //Double
@@ -43,7 +46,7 @@ fun main(){
 //Bolean
     val booleanExample1: Boolean = true
     val booleanExample2: Boolean = false
-println("prueba")
+    println("prueba")
     println("preuba 2")
     println("sumar:")
     println(age + age2)

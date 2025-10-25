@@ -1,9 +1,9 @@
 package com.freites.superandroidmaster
 
-fun main(){
+fun main() {
     var name: String = "andres"
 
-  println(name[0] )
+    println(name[0])
 
 
 }
