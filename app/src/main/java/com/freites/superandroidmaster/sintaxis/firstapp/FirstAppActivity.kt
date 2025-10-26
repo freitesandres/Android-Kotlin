@@ -1,5 +1,6 @@
 package com.freites.superandroidmaster.sintaxis.firstapp
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.activity.enableEdgeToEdge
@@ -21,8 +22,16 @@ class FirstAppActivity : AppCompatActivity() {
         val etName = findViewById<AppCompatEditText>(R.id.etName)
 
 
+
+
         btnStart.setOnClickListener {
-            Log.i("Andres", "Button Pulsado")
+            val name = etName.text.toString()
+
+            if (name.isNotEmpty()){
+                val intent = Intent (this, ResultActivity::class.java)
+                startActivity(intent)
+            }
+
 
 
         }
