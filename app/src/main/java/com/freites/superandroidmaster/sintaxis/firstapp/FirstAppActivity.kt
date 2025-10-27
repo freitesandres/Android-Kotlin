@@ -29,11 +29,15 @@ class FirstAppActivity : AppCompatActivity() {
 
             if (name.isNotEmpty()){
                 val intent = Intent (this, ResultActivity::class.java)
+                intent.putExtra("EXTRA_NAME", name)
+
                 startActivity(intent)
+
             }
 
 
 
         }
+        //al arrancar la pantalla
     }
 }
