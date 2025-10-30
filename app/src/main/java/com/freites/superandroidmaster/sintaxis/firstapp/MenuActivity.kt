@@ -8,18 +8,26 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.freites.superandroidmaster.R
+import com.freites.superandroidmaster.sintaxis.imccalucalator.imcCalculatorActivity
 
 class MenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_menu)
-val btnSaludApp = findViewById<Button>(R.id.btSaludApp)
+val btnSaludApp = findViewById<Button>(R.id.btnSaludApp)
+        val btnIMCApp = findViewById<Button>(R.id.btnIMCApp)
         btnSaludApp.setOnClickListener { navigateToSaludApp() }
+btnIMCApp.setOnClickListener { navigateToIMCApp() }
     }
-    fun navigateToSaludApp(){
+     private fun navigateToSaludApp(){
         val intent = Intent(this, FirstAppActivity::class.java)
         startActivity(intent)
 
     }
+}
+
+private fun MenuActivity.navigateToIMCApp() {
+val intent = Intent (this, imcCalculatorActivity::class.java)
+    startActivity(intent)
 }
