@@ -1,6 +1,7 @@
 package com.freites.superandroidmaster.sintaxis.imccalucalator
 
 import android.os.Bundle
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
@@ -8,6 +9,7 @@ import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.freites.superandroidmaster.R
+import com.google.android.material.slider.RangeSlider
 
 class imcCalculatorActivity : AppCompatActivity() {
 
@@ -16,6 +18,10 @@ class imcCalculatorActivity : AppCompatActivity() {
 
     private lateinit var viewMale: CardView
     private lateinit var viewFemale: CardView
+
+    private lateinit var tvHeight: TextView
+
+    private lateinit var rsHeight: RangeSlider
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,6 +35,8 @@ class imcCalculatorActivity : AppCompatActivity() {
     private fun initComponents() {
         viewMale = findViewById(R.id.viewMale)
         viewFemale = findViewById(R.id.viewFemale)
+        tvHeight = findViewById(R.id.tvHeight)
+        rsHeight = findViewById(R.id.rsHeight)
     }
 
     private fun initListeners() {
@@ -41,6 +49,12 @@ class imcCalculatorActivity : AppCompatActivity() {
             changeGender()
             setGenderColor()
         }
+
+        rsHeight.addOnChangeListener { _, value, _ ->
+            val height = value.toInt()
+            tvHeight.text = "$height cm"
+        }
+
     }
 
     private fun changeGender() {
