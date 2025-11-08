@@ -14,4 +14,9 @@
     <color name="background_button">#EB1555</color>
     <color name="title_text">#FF8D8E98</color>
     <color name="background_fab">#FF6200EE</color>
+
+    <color name="result_ok">#2E7D32</color>         <!-- verde -->
+    <color name="result_warn">#F9A825</color>       <!-- amarillo -->
+    <color name="result_orange">#FF6D00</color>     <!-- naranja -->
+    <color name="result_bad">#D32F2F</color>        <!-- rojo -->
 </resources>

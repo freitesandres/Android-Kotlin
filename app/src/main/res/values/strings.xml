@@ -1,10 +1,23 @@
 <resources>
     <string name="app_name">Superandroidmaster</string>
     <string name="male">Hombre</string>
-<string name="female">Mujer</string>
+    <string name="female">Mujer</string>
     <string name="height">Altura</string>
     <string name="weight">Peso</string>
     <string name="Age">Edad</string>
     <string name="Calculate">Calcular</string>
+
+    <string name="your_result">Tu resultado</string>
+    <string name="recalculate">RE-CALCULAR</string>
+
+    <string name="underweight">Bajo peso</string>
+    <string name="normal">Normal</string>
+    <string name="overweight">Sobrepeso</string>
+    <string name="obesity">Obesidad</string>
+
+    <string name="desc_underweight">Estás por debajo de lo óptimo para tu peso y altura.</string>
+    <string name="desc_normal">¡Excelente! Tu IMC está dentro del rango saludable.</string>
+    <string name="desc_overweight">Estás por encima de lo óptimo para tu peso y altura.</string>
+    <string name="desc_obesity">Tu IMC es alto. Considera consultar con un profesional de la salud.</string>
 
 </resources>

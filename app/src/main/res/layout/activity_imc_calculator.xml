@@ -94,7 +94,7 @@
         android:id="@+id/viewHeight"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         app:cardBackgroundColor="@color/background_component"
         app:cardCornerRadius="16dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -148,7 +148,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/viewAge"
         android:layout_width="0dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         app:cardBackgroundColor="@color/background_component"
         app:cardCornerRadius="16dp"
@@ -219,7 +219,7 @@
         app:cardBackgroundColor="@color/background_component"
         app:cardCornerRadius="16dp"
         android:layout_width="0dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:layout_height="150dp">
 
         <androidx.appcompat.widget.LinearLayoutCompat
@@ -282,20 +282,20 @@
     </androidx.cardview.widget.CardView>
 
 
+
     <Button
         android:id="@+id/btnCalculate"
         android:layout_width="0dp"
-        android:layout_height="80dp"
+        android:layout_height="64dp"
         android:text="@string/Calculate"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
+        app:layout_constraintTop_toBottomOf="@id/viewWeight"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 
 

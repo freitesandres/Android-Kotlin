@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_app"
+    android:paddingHorizontal="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".sintaxis.imccalucalator.ResultIMCActivity">
+
+    <!-- Título con más aire respecto a la barra -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/your_result"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <!-- Card estirada entre el título y el botón -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardResult"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp"
+        app:cardCornerRadius="20dp"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="@color/background_component"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnRecalculate">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sobrepeso"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/result_orange" />
+
+            <TextView
+                android:id="@+id/tvBmi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="27.46"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/desc_overweight"
+                android:textColor="@color/title_text"
+                android:layout_marginTop="12dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Botón con más margen inferior -->
+    <Button
+        android:id="@+id/btnRecalculate"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:text="@string/recalculate"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/background_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

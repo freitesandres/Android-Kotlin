@@ -12,6 +12,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.freites.superandroidmaster.R
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.slider.RangeSlider
+import android.content.Intent
 import android.widget.Toast
 
 class imcCalculatorActivity : AppCompatActivity() {
@@ -142,6 +143,17 @@ private fun  setWeight(){
 
         // Cálculo del IMC en float para evitar división entera
         val imc = currentWeight.toFloat() / (heightInMeters * heightInMeters)
+
+
+
+        val intent = Intent(this, ResultIMCActivity::class.java).apply {
+            putExtra("EXTRA_BMI", imc)
+            putExtra("EXTRA_HEIGHT_CM", (heightInMeters * 100).toInt())
+            putExtra("EXTRA_WEIGHT_KG", currentWeight)
+            putExtra("EXTRA_AGE", currentAge)
+        }
+        startActivity(intent)
+
 
         val resultText = when {
             imc < 18.5f -> "Bajo peso"
