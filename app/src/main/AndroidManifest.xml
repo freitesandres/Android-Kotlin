@@ -12,6 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Superandroidmaster">
         <activity
+            android:name=".sintaxis.todoapp.TodoActivity"
+            android:theme="@style/Theme.TODOApp"
+            android:exported="false" />
+        <activity
             android:name=".sintaxis.imccalucalator.ResultIMCActivity"
             android:exported="false" />
         <activity

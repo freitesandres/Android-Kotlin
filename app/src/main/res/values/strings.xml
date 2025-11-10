@@ -1,4 +1,5 @@
 <resources>
+    <!--IMC APP-->
     <string name="app_name">Superandroidmaster</string>
     <string name="male">Hombre</string>
     <string name="female">Mujer</string>
@@ -14,10 +15,24 @@
     <string name="normal">Normal</string>
     <string name="overweight">Sobrepeso</string>
     <string name="obesity">Obesidad</string>
+    
+
 
     <string name="desc_underweight">Estás por debajo de lo óptimo para tu peso y altura.</string>
     <string name="desc_normal">¡Excelente! Tu IMC está dentro del rango saludable.</string>
     <string name="desc_overweight">Estás por encima de lo óptimo para tu peso y altura.</string>
     <string name="desc_obesity">Tu IMC es alto. Considera consultar con un profesional de la salud.</string>
+
+    <!--TODOApp-->
+
+    <string name="todo_title">Bienvenido</string>
+    <string name="todo_categories">Categorías:</string>
+    <string name="todo_tasks">Tareas:</string>
+
+    <string name="todo_dialog_add_task">Añade la tarea</string>
+    <string name="todo_dialog_category_business">Negocios</string>
+    <string name="todo_dialog_category_other">Otros</string>
+    <string name="todo_dialog_category_personal">Personal</string>
+    <string name="todo_dialog_add_task_button">Crear tarea</string>
 
 </resources>
