@@ -21,7 +21,6 @@
         android:textColor="@color/black" />
 
 
-
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/etName"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,7 +31,6 @@
         android:singleLine="true"
         android:maxLines="1"
         android:layout_height="wrap_content" />
-
 
 
     <androidx.appcompat.widget.AppCompatButton

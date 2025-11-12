@@ -16,14 +16,15 @@ class MenuActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_menu)
-val btnSaludApp = findViewById<Button>(R.id.btnSaludApp)
+        val btnSaludApp = findViewById<Button>(R.id.btnSaludApp)
         val btnIMCApp = findViewById<Button>(R.id.btnIMCApp)
         val btnTODO = findViewById<Button>(R.id.btnTODO)
         btnSaludApp.setOnClickListener { navigateToSaludApp() }
-btnIMCApp.setOnClickListener { navigateToIMCApp() }
+        btnIMCApp.setOnClickListener { navigateToIMCApp() }
         btnTODO.setOnClickListener { navigateToTodoApp() }
     }
-     private fun navigateToSaludApp(){
+
+    private fun navigateToSaludApp() {
         val intent = Intent(this, FirstAppActivity::class.java)
         startActivity(intent)
 
@@ -31,11 +32,11 @@ btnIMCApp.setOnClickListener { navigateToIMCApp() }
 }
 
 private fun MenuActivity.navigateToTodoApp() {
-    val intent = Intent (this, TodoActivity::class.java)
+    val intent = Intent(this, TodoActivity::class.java)
     startActivity(intent)
 }
 
 private fun MenuActivity.navigateToIMCApp() {
-val intent = Intent (this, imcCalculatorActivity::class.java)
+    val intent = Intent(this, imcCalculatorActivity::class.java)
     startActivity(intent)
 }

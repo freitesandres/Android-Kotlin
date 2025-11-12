@@ -93,12 +93,12 @@ class imcCalculatorActivity : AppCompatActivity() {
             setWeight()
         }
         btnPlusAge.setOnClickListener {
-            currentAge+=1
+            currentAge += 1
             setAge()
 
         }
         btnSubtractAge.setOnClickListener {
-            currentAge-=1
+            currentAge -= 1
             setAge()
         }
         btnCalculate.setOnClickListener {
@@ -106,12 +106,14 @@ class imcCalculatorActivity : AppCompatActivity() {
         }
     }
 
-    private fun setAge(){
+    private fun setAge() {
         tvAge.text = currentAge.toString()
     }
-private fun  setWeight(){
-    tvWeight.text = currentWeight.toString()
-}
+
+    private fun setWeight() {
+        tvWeight.text = currentWeight.toString()
+    }
+
     private fun changeGender() {
         isMaleSelected = !isMaleSelected
         isFemaleSelected = !isFemaleSelected
@@ -137,13 +139,13 @@ private fun  setWeight(){
         setWeight()
         setAge()
     }
+
     private fun calculateIMC() {
         // Altura en metros (tomada del RangeSlider)
         val heightInMeters = rsHeight.values.first() / 100f   // usa .first() en vez de [0]
 
         // Cálculo del IMC en float para evitar división entera
         val imc = currentWeight.toFloat() / (heightInMeters * heightInMeters)
-
 
 
         val intent = Intent(this, ResultIMCActivity::class.java).apply {
@@ -157,9 +159,9 @@ private fun  setWeight(){
 
         val resultText = when {
             imc < 18.5f -> "Bajo peso"
-            imc < 25f   -> "Normal"
-            imc < 30f   -> "Sobrepeso"
-            else        -> "Obesidad"
+            imc < 25f -> "Normal"
+            imc < 30f -> "Sobrepeso"
+            else -> "Obesidad"
         }
 
         Toast.makeText(

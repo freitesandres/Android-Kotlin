@@ -27,14 +27,13 @@ class FirstAppActivity : AppCompatActivity() {
         btnStart.setOnClickListener {
             val name = etName.text.toString()
 
-            if (name.isNotEmpty()){
-                val intent = Intent (this, ResultActivity::class.java)
+            if (name.isNotEmpty()) {
+                val intent = Intent(this, ResultActivity::class.java)
                 intent.putExtra("EXTRA_NAME", name)
 
                 startActivity(intent)
 
             }
-
 
 
         }

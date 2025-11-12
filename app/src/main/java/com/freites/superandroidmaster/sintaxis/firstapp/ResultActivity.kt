@@ -13,9 +13,9 @@ class ResultActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_result)
-val tvResul = findViewById<TextView>(R.id.tvResult)
+        val tvResul = findViewById<TextView>(R.id.tvResult)
 
-         val name: String =  intent.extras?.getString("EXTRA_NAME").orEmpty()
+        val name: String = intent.extras?.getString("EXTRA_NAME").orEmpty()
         tvResul.text = "Hola $name"
 
     }

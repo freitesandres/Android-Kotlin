@@ -41,16 +41,19 @@ class ResultIMCActivity : AppCompatActivity() {
                 R.string.desc_underweight,
                 R.color.result_warn
             )
+
             bmi < 25f -> Triple(
                 getString(R.string.normal),
                 R.string.desc_normal,
                 R.color.result_ok
             )
+
             bmi < 30f -> Triple(
                 getString(R.string.overweight),
                 R.string.desc_overweight,
                 R.color.result_orange
             )
+
             else -> Triple(
                 getString(R.string.obesity),
                 R.string.desc_obesity,
