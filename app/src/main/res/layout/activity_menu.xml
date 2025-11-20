@@ -12,7 +12,7 @@
         android:id="@+id/btnSaludApp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="50dp"
         android:text="SaludApp" />
 
     <Button
@@ -28,6 +28,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:text="TODO App" />
+
+    <Button
+        android:id="@+id/btnSuperHero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="SuperHeroApp" />
 
 
 </LinearLayout>
