@@ -11,6 +11,7 @@ import com.freites.superandroidmaster.R
 import com.freites.superandroidmaster.sintaxis.imccalucalator.imcCalculatorActivity
 import com.freites.superandroidmaster.sintaxis.superheroapp.SuperHeroListActivity
 import com.freites.superandroidmaster.sintaxis.todoapp.TodoActivity
+import com.freites.superandroidmaster.sintaxis.settings.SettingsActivity
 
 class MenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,11 +22,13 @@ class MenuActivity : AppCompatActivity() {
         val btnIMCApp = findViewById<Button>(R.id.btnIMCApp)
         val btnTODO = findViewById<Button>(R.id.btnTODO)
         val btnSuperHero = findViewById<Button>(R.id.btnSuperHero)
+        val btnSettings  = findViewById<Button>(R.id.btnSettings)
 
         btnSaludApp.setOnClickListener { navigateToSaludApp() }
         btnIMCApp.setOnClickListener { navigateToIMCApp() }
         btnTODO.setOnClickListener { navigateToTodoApp() }
         btnSuperHero.setOnClickListener { navigateToSuperHeroApp() }
+        btnSettings.setOnClickListener { navigateToSettingsApp() }
     }
 
     private fun navigateToSaludApp() {
@@ -47,5 +50,9 @@ private fun MenuActivity.navigateToTodoApp() {
 
 private fun MenuActivity.navigateToIMCApp() {
     val intent = Intent(this, imcCalculatorActivity::class.java)
+    startActivity(intent)
+}
+private fun MenuActivity.navigateToSettingsApp() {
+    val intent = Intent(this, SettingsActivity::class.java)
     startActivity(intent)
 }

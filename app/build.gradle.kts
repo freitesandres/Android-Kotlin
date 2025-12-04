@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("kotlin-kapt")
 }
 
 android {
@@ -9,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId = "com.freites.superandroidmaster"
-        minSdk = 21
+        minSdk = 23
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"
@@ -47,9 +48,28 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
 
+    implementation("com.github.bumptech.glide:glide:4.16.0")
+
+
+    // Room
+    implementation("androidx.room:room-runtime:2.6.1")
+    implementation(libs.androidx.datastore.core)
+    kapt("androidx.room:room-compiler:2.6.1")
+    implementation("androidx.room:room-ktx:2.6.1")
+
+
+
+
     //Retrofit
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+
+    //Picasso
+
+    implementation("com.squareup.picasso:picasso:2.8")
+
+    //DataStore
+    implementation("androidx.datastore:datastore-preferences:1.0.0")
 
 
     testImplementation(libs.junit)
